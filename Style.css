@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+}
+
+.container{
+    width:90%;
+    max-width:600px;
+    background:#1b1b1b;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+textarea,
+input{
+    width:100%;
+    margin:10px 0;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    box-sizing:border-box;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#qrcode{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+}
+
+#encryptedBox,
+#result{
+    margin-top:15px;
+    word-break:break-all;
+}
+
+a{
+    display:block;
+    margin-top:20px;
+    color:#4da3ff;
+}
