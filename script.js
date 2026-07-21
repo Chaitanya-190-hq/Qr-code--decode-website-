@@ -23,7 +23,7 @@ function generateQR() {
 
     document.getElementById("downloadBtn").style.display =
         "inline-block";
-}l
+}
 function downloadQR() {
     const img = document.querySelector("#qrcode img");
     const canvas = document.querySelector("#qrcode canvas");
