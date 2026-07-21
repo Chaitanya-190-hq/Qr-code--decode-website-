@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChaiQR Decoder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🕵️ ChaiQR Decoder</h1>
+
+    <textarea id="encryptedText" placeholder="Paste encrypted text from QR"></textarea>
+    <input type="password" id="password" placeholder="Secret Password">
+
+    <button onclick="decryptMessage()">Decode</button>
+
+    <div id="result"></div>
+
+    <a href="index.html">← Back to Encoder</a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+  <script src="decoder.js"></script>
+</body>
+</html>
