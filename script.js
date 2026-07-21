@@ -20,4 +20,26 @@ function generateQR() {
         width: 256,
         height: 256
     });
+    function downloadQR() {
+    const img = document.querySelector("#qrcode img");
+    const canvas = document.querySelector("#qrcode canvas");
+
+    let url;
+
+    if (img) {
+        url = img.src;
+    } else if (canvas) {
+        url = canvas.toDataURL("image/png");
+    } else {
+        alert("No QR code found!");
+        return;
+    }
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "ChaiQR.png";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    }
 }
