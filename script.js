@@ -20,7 +20,11 @@ function generateQR() {
         width: 256,
         height: 256
     });
-    function downloadQR() {
+
+    document.getElementById("downloadBtn").style.display =
+        "inline-block";
+}l
+function downloadQR() {
     const img = document.querySelector("#qrcode img");
     const canvas = document.querySelector("#qrcode canvas");
 
